@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="키갈리 관광 가이드 - 아프리카의 보석, 르완다의 수도 키갈리를 탐험하세요. 명소, 문화, 음식, 여행 정보를 한눈에.">
+    <meta name="keywords" content="키갈리, 르완다, 아프리카 여행, 관광 가이드, Kigali, Rwanda, travel guide">
+    <title>Discover Kigali - 키갈리 관광 가이드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">Discover <span class="accent">Kigali</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">홈</a></li>
+                <li><a href="#attractions" class="nav-link">명소</a></li>
+                <li><a href="#culture" class="nav-link">문화</a></li>
+                <li><a href="#food" class="nav-link">음식</a></li>
+                <li><a href="#info" class="nav-link">여행정보</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">여행 문의</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/hero.png" alt="키갈리 전경" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🇷🇼 아프리카의 보석</div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">천 개의 언덕 위</span>
+                <span class="hero-title-line highlight">키갈리를 발견하세요</span>
+            </h1>
+            <p class="hero-subtitle">
+                아프리카에서 가장 깨끗하고 안전한 도시, 르완다의 수도 키갈리.<br>
+                풍부한 역사, 활기찬 문화, 숨 막히는 자연이 당신을 기다립니다.
+            </p>
+            <div class="hero-buttons">
+                <a href="#attractions" class="btn btn-primary">
+                    <span>명소 탐험하기</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info" class="btn btn-secondary">
+                    <span>여행 정보</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="1500">0</span><span class="stat-suffix">m</span>
+                    <span class="stat-label">해발 고도</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="24">0</span><span class="stat-suffix">°C</span>
+                    <span class="stat-label">연평균 기온</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="120">0</span><span class="stat-suffix">만+</span>
+                    <span class="stat-label">인구</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>스크롤하여 더 알아보기</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="section attractions" id="attractions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">인기 명소</span>
+                <h2 class="section-title">키갈리에서 꼭 방문해야 할 곳</h2>
+                <p class="section-desc">역사와 자연이 어우러진 키갈리의 대표 명소들을 소개합니다</p>
+            </div>
+            <div class="attractions-grid">
+                <!-- Card 1 -->
+                <div class="attraction-card featured" id="attraction-1">
+                    <div class="card-image">
+                        <img src="images/gorilla.png" alt="화산 국립공원 마운틴 고릴라" loading="lazy">
+                        <div class="card-badge">🦍 필수 방문</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">자연 & 야생동물</div>
+                        <h3 class="card-title">화산 국립공원</h3>
+                        <p class="card-desc">세계에서 가장 희귀한 마운틴 고릴라를 만날 수 있는 곳. 울창한 대나무 숲 속에서 펼쳐지는 감동적인 고릴라 트레킹 체험은 일생일대의 경험이 될 것입니다.</p>
+                        <div class="card-meta">
+                            <span class="meta-item">📍 키갈리에서 2시간</span>
+                            <span class="meta-item">⏱️ 반나절~종일</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-label">트레킹 허가증</span>
+                            <span class="price-value">$1,500~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="attraction-card" id="attraction-2">
+                    <div class="card-image">
+                        <img src="images/memorial.png" alt="키갈리 제노사이드 메모리얼" loading="lazy">
+                        <div class="card-badge">🕊️ 역사</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">역사 & 추모</div>
+                        <h3 class="card-title">제노사이드 메모리얼</h3>
+                        <p class="card-desc">1994년 르완다 대학살의 역사를 기억하고 추모하는 공간. 평화와 화해의 메시지를 전하는 이 기념관은 깊은 울림을 줍니다.</p>
+                        <div class="card-meta">
+                            <span class="meta-item">📍 기소지 지역</span>
+                            <span class="meta-item">⏱️ 2~3시간</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-label">입장료</span>
+                            <span class="price-value">무료</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="attraction-card" id="attraction-3">
+                    <div class="card-image">
+                        <img src="images/market.png" alt="키미론코 시장" loading="lazy">
+                        <div class="card-badge">🛍️ 쇼핑</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">시장 & 쇼핑</div>
+                        <h3 class="card-title">키미론코 시장</h3>
+                        <p class="card-desc">키갈리 최대의 전통 시장. 신선한 열대 과일, 향신료, 수공예품, 전통 직물까지 르완다의 일상과 문화를 생생하게 체험할 수 있습니다.</p>
+                        <div class="card-meta">
+                            <span class="meta-item">📍 키미론코 지역</span>
+                            <span class="meta-item">⏱️ 2~4시간</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-label">입장료</span>
+                            <span class="price-value">무료</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More attractions list -->
+            <div class="more-attractions">
+                <h3 class="more-title">더 많은 명소</h3>
+                <div class="attractions-list">
+                    <div class="attraction-item">
+                        <span class="item-icon">🏛️</span>
+                        <div class="item-info">
+                            <h4>국립 자연사 박물관</h4>
+                            <p>르완다의 자연과 생태계를 배울 수 있는 박물관</p>
+                        </div>
+                        <span class="item-tag">교육</span>
+                    </div>
+                    <div class="attraction-item">
+                        <span class="item-icon">🌿</span>
+                        <div class="item-info">
+                            <h4>뉘웅게 숲 국립공원</h4>
+                            <p>키갈리 시내에 위치한 열대우림 자연보호구역</p>
+                        </div>
+                        <span class="item-tag">자연</span>
+                    </div>
+                    <div class="attraction-item">
+                        <span class="item-icon">🏔️</span>
+                        <div class="item-info">
+                            <h4>키겔리 산</h4>
+                            <p>키갈리 시내를 한눈에 조망할 수 있는 전망대</p>
+                        </div>
+                        <span class="item-tag">전망</span>
+                    </div>
+                    <div class="attraction-item">
+                        <span class="item-icon">🖼️</span>
+                        <div class="item-info">
+                            <h4>이네마 아트센터</h4>
+                            <p>현대 르완다 예술가들의 작품을 감상할 수 있는 갤러리</p>
+                        </div>
+                        <span class="item-tag">예술</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="section culture" id="culture">
+        <div class="culture-bg">
+            <img src="images/culture.png" alt="르완다 전통 문화" loading="lazy">
+            <div class="culture-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="culture-content">
+                <div class="section-header light">
+                    <span class="section-tag">문화 체험</span>
+                    <h2 class="section-title">르완다의 살아있는 문화</h2>
+                    <p class="section-desc">수천 년의 전통이 현대와 어우러진 독특한 르완다 문화를 경험하세요</p>
+                </div>
+                <div class="culture-features">
+                    <div class="culture-feature">
+                        <div class="feature-icon">💃</div>
+                        <h3>인토레 춤</h3>
+                        <p>르완다의 전통 전사 춤으로, 용맹함과 우아함이 결합된 역동적인 퍼포먼스를 감상하세요.</p>
+                    </div>
+                    <div class="culture-feature">
+                        <div class="feature-icon">🧺</div>
+                        <h3>아가세케 바구니</h3>
+                        <p>평화와 화합의 상징인 전통 바구니 짜기 체험. 섬세한 무늬에 르완다의 이야기가 담겨 있습니다.</p>
+                    </div>
+                    <div class="culture-feature">
+                        <div class="feature-icon">☕</div>
+                        <h3>커피 투어</h3>
+                        <p>세계적으로 인정받는 르완다 스페셜티 커피. 농장에서 한 잔까지, 커피의 여정을 따라가 보세요.</p>
+                    </div>
+                    <div class="culture-feature">
+                        <div class="feature-icon">🎵</div>
+                        <h3>우무간다</h3>
+                        <p>매월 마지막 토요일, 온 국민이 함께하는 봉사활동. 르완다의 공동체 정신을 직접 경험해 보세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section class="section food" id="food">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">미식 여행</span>
+                <h2 class="section-title">키갈리의 맛을 즐기세요</h2>
+                <p class="section-desc">신선한 재료와 풍부한 맛이 조화를 이루는 르완다 요리의 세계</p>
+            </div>
+            <div class="food-grid">
+                <div class="food-showcase">
+                    <img src="images/food.png" alt="르완다 전통 음식" loading="lazy">
+                    <div class="food-showcase-overlay">
+                        <h3>르완다의 맛</h3>
+                        <p>전통과 현대가 어우러진 미식 경험</p>
+                    </div>
+                </div>
+                <div class="food-list">
+                    <div class="food-item" id="food-1">
+                        <div class="food-number">01</div>
+                        <div class="food-info">
+                            <h3>브로셰트 (Brochettes)</h3>
+                            <p>숯불에 구운 고기 꼬치로, 르완다의 대표적인 길거리 음식입니다. 소고기, 염소고기, 또는 생선으로 만들며 매콤한 소스와 함께 즐깁니다.</p>
+                            <span class="food-tag">🔥 길거리 음식</span>
+                        </div>
+                    </div>
+                    <div class="food-item" id="food-2">
+                        <div class="food-number">02</div>
+                        <div class="food-info">
+                            <h3>이비하라게 (Ibiharagе)</h3>
+                            <p>르완다식 콩 요리로, 다양한 향신료와 함께 천천히 조리합니다. 바나나 잎에 싸서 먹으면 더욱 풍미가 깊어집니다.</p>
+                            <span class="food-tag">🫘 전통 요리</span>
+                        </div>
+                    </div>
+                    <div class="food-item" id="food-3">
+                        <div class="food-number">03</div>
+                        <div class="food-info">
+                            <h3>이기사파티 (Igisafuria)</h3>
+                            <p>르완다식 스튜로 다양한 야채와 고기를 함께 끓인 푸짐한 요리. 우갈리(옥수수떡)와 함께 먹습니다.</p>
+                            <span class="food-tag">🍲 메인 요리</span>
+                        </div>
+                    </div>
+                    <div class="food-item" id="food-4">
+                        <div class="food-number">04</div>
+                        <div class="food-info">
+                            <h3>르완다 커피</h3>
+                            <p>해발 1,500m 이상의 고지대에서 재배되는 스페셜티 등급의 아라비카 커피. 과일향과 초콜릿 노트가 특징입니다.</p>
+                            <span class="food-tag">☕ 음료</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant Recommendations -->
+            <div class="restaurants">
+                <h3 class="restaurants-title">추천 레스토랑</h3>
+                <div class="restaurant-cards">
+                    <div class="restaurant-card">
+                        <div class="restaurant-rank">⭐</div>
+                        <h4>Heaven Restaurant</h4>
+                        <p>키갈리 시내 전망이 아름다운 루프탑 레스토랑</p>
+                        <span class="restaurant-price">$$$</span>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="restaurant-rank">⭐</div>
+                        <h4>Repub Lounge</h4>
+                        <p>현대적 분위기의 아프리칸 퓨전 레스토랑</p>
+                        <span class="restaurant-price">$$$</span>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="restaurant-rank">⭐</div>
+                        <h4>Brachetto Restaurant</h4>
+                        <p>정통 이탈리안과 르완다 요리의 만남</p>
+                        <span class="restaurant-price">$$</span>
+                    </div>
+                    <div class="restaurant-card">
+                        <div class="restaurant-rank">⭐</div>
+                        <h4>Inzora Rooftop</h4>
+                        <p>키갈리 최고의 선셋 뷰와 칵테일</p>
+                        <span class="restaurant-price">$$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Info Section -->
+    <section class="section info" id="info">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">여행 정보</span>
+                <h2 class="section-title">키갈리 여행 준비</h2>
+                <p class="section-desc">키갈리 여행을 위해 알아야 할 모든 실용적인 정보</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card" id="info-visa">
+                    <div class="info-icon">🛂</div>
+                    <h3>비자 정보</h3>
+                    <ul class="info-list">
+                        <li>한국 여권 소지자: 도착 비자 가능</li>
+                        <li>30일 관광 비자: $30</li>
+                        <li>동아프리카 관광 비자: $100 (3개국)</li>
+                        <li>이비자(irembo) 온라인 사전 신청 권장</li>
+                    </ul>
+                </div>
+                <div class="info-card" id="info-transport">
+                    <div class="info-icon">✈️</div>
+                    <h3>교통편</h3>
+                    <ul class="info-list">
+                        <li>키갈리 국제공항 (KGL)</li>
+                        <li>인천 → 키갈리: 경유 평균 15~20시간</li>
+                        <li>시내 교통: 모토(오토바이 택시) 이용 가능</li>
+                        <li>카 렌탈 & 가이드 투어 추천</li>
+                    </ul>
+                </div>
+                <div class="info-card" id="info-weather">
+                    <div class="info-icon">🌤️</div>
+                    <h3>날씨 & 최적 방문 시기</h3>
+                    <ul class="info-list">
+                        <li>연평균 기온: 19~27°C (쾌적)</li>
+                        <li>건기: 6~9월, 12~2월 (최적)</li>
+                        <li>우기: 3~5월, 10~11월</li>
+                        <li>고릴라 트레킹: 건기 추천</li>
+                    </ul>
+                </div>
+                <div class="info-card" id="info-safety">
+                    <div class="info-icon">🛡️</div>
+                    <h3>안전 & 건강</h3>
+                    <ul class="info-list">
+                        <li>아프리카에서 가장 안전한 도시 중 하나</li>
+                        <li>황열병 예방접종 필수 (입국 시 확인)</li>
+                        <li>말라리아 예방약 복용 권장</li>
+                        <li>비닐봉지 사용 금지 (환경 법률)</li>
+                    </ul>
+                </div>
+                <div class="info-card" id="info-money">
+                    <div class="info-icon">💰</div>
+                    <h3>화폐 & 비용</h3>
+                    <ul class="info-list">
+                        <li>화폐: 르완다 프랑 (RWF)</li>
+                        <li>1 USD ≈ 1,300 RWF</li>
+                        <li>숙박: $30~$200/박</li>
+                        <li>식사: $5~$30/끼</li>
+                    </ul>
+                </div>
+                <div class="info-card" id="info-language">
+                    <div class="info-icon">🗣️</div>
+                    <h3>언어 & 에티켓</h3>
+                    <ul class="info-list">
+                        <li>공용어: 킨야르완다어, 영어, 프랑스어</li>
+                        <li>인사: "Muraho" (안녕하세요)</li>
+                        <li>감사: "Murakoze" (감사합니다)</li>
+                        <li>두 손으로 물건 주고받기 (예의)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Tips -->
+            <div class="quick-tips">
+                <h3 class="tips-title">💡 여행 꿀팁</h3>
+                <div class="tips-grid">
+                    <div class="tip">
+                        <span class="tip-number">01</span>
+                        <p>비닐봉지를 가져가지 마세요. 르완다에서는 법으로 금지되어 있습니다.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-number">02</span>
+                        <p>고릴라 트레킹 허가증은 최소 3개월 전에 예약하세요.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-number">03</span>
+                        <p>모토(오토바이 택시) 이용 시 반드시 헬멧을 착용하세요.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-number">04</span>
+                        <p>르완다 커피를 꼭 맛보세요. 질 좋은 원두를 저렴하게 구매할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">여행 문의</span>
+                    <h2 class="contact-title">키갈리 여행을<br>계획해 보세요</h2>
+                    <p class="contact-desc">
+                        맞춤 여행 일정 상담부터 고릴라 트레킹 예약까지,<br>
+                        키갈리 여행의 모든 것을 도와드립니다.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <span class="contact-label">이메일</span>
+                                <span class="contact-value">info@discoverkigali.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <span class="contact-label">전화</span>
+                                <span class="contact-value">+250 788 123 456</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <span class="contact-label">주소</span>
+                                <span class="contact-value">KG 9 Ave, Kigali, Rwanda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" placeholder="홍길동" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="travel-date">여행 예정일</label>
+                        <input type="date" id="travel-date" name="travel-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="travelers">여행 인원</label>
+                        <select id="travelers" name="travelers">
+                            <option value="">선택하세요</option>
+                            <option value="1">1명 (솔로 여행)</option>
+                            <option value="2">2명 (커플)</option>
+                            <option value="3-4">3~4명 (소그룹)</option>
+                            <option value="5+">5명 이상 (단체)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" name="message" rows="4" placeholder="원하시는 여행 일정이나 궁금한 점을 자유롭게 적어주세요"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span>문의하기</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">🌍</span>
+                        <span class="logo-text">Discover <span class="accent">Kigali</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        천 개의 언덕 위, 아프리카의 보석 키갈리.<br>
+                        당신의 특별한 여행을 함께 합니다.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>바로가기</h4>
+                        <ul>
+                            <li><a href="#attractions">인기 명소</a></li>
+                            <li><a href="#culture">문화 체험</a></li>
+                            <li><a href="#food">미식 여행</a></li>
+                            <li><a href="#info">여행 정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>여행 상품</h4>
+                        <ul>
+                            <li><a href="#">고릴라 트레킹</a></li>
+                            <li><a href="#">키갈리 시티 투어</a></li>
+                            <li><a href="#">커피 농장 투어</a></li>
+                            <li><a href="#">사파리 패키지</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>고객 지원</h4>
+                        <ul>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">여행 보험</a></li>
+                            <li><a href="#">이용 약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Discover Kigali. All rights reserved. 🇷🇼</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="맨 위로 이동">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
