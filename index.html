@@ -1,21 +1,57 @@
-<!-- My first web page! / 나의 첫 웹페이지! --> 
- <!DOCTYPE html> 
- <html> 
-    <head> 
-        <title>My First Web Page</title> 
+
+
+<!DOCTYPE html> 
+← Declares "this is HTML!" / "이건 HTML 문서!" 
+<html> ← HTML starts / HTML 시작 
+    <head> ← Head (invisible info) / 헤드 (보이지 않는 정보) 
+        <title>Page Title</title> ← Browser tab title / 브라우저 탭 제목 
     </head> 
     <body> 
-        <h1>🌍 Hello! My friend / 안녕하세요!</h1> 
-        <p>This is my first web page! / 나의 첫 웹페이지입니다!</p> 
-        <p>Created by: (write your name / 이름을 쓰세요)</p> 
-    <h1>🌍 Kigali Travel Guide / 키갈리 여행 가이드</h1> 
-    <h2>The Jewel of Africa / 아프리카의 보석</h2> 
-    <p>Kigali is the capital of Rwanda! / 키갈리는 르완다의 수도입니다!</p> 
-    <p>A beautiful city sitting on a thousand hills. / 천 개의 언덕 위에 자리한 아름다운 도시.</p> 
-    <hr> 
-    <h3>📌 Basic Info / 기본 정보</h3> 
-    <p>Population: 1.2 million / 인구: 120만 명</p> 
-    <p>Altitude: 1,500m above sea level / 해발 1,500m</p> 
-    <p>Average temperature: 24°C / 평균 기온: 24°C</p>
+        ← Body (visible content!) / 바디 (화면에 보이는 내용!) Write your content here! / 내용을 여기에 작성! 
+    <p>First line / 첫 번째 줄<br>Second line / 두 번째 줄</p> 
+        <hr> 
+        <p>Content below the divider / 구분선 아래 내용</p>
     </body> 
+</html> ← HTML ends / HTML
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kigali | 키갈리 소개</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        h3 { color: #16a085; }
+        .info-box { background-color: #f9f9f9; padding: 15px; border-left: 5px solid #2980b9; }
+    </style>
+</head>
+<body>
+
+    <h1>🌍 Kigali Travel Guide | 키갈리 여행 가이드</h1>
+    <p><strong>Welcome to Kigali!</strong> / 키갈리에 오신 것을 환영합니다!</p>
+    
+    <hr>
+
+    <h2>📌 Basic Info | 기본 정보</h2>
+    <div class="info-box">
+        <ul>
+            <li><strong>Population:</strong> ~1.2M / 인구: 약 120만 명</li>
+            <li><strong>Languages:</strong> Kinyarwanda, English, French / 언어: 키냐르완다어, 영어, 프랑스어</li>
+            <li><strong>Currency:</strong> Rwandan Franc (RWF) / 통화: 르완다 프랑 (RWF)</li>
+        </ul>
+    </div>
+
+    <h2>🏔️ Why Kigali? | 왜 키갈리?</h2>
+    <ul>
+        <li>Known as <em>"Land of a Thousand Hills."</em> / "천 개의 언덕의 땅"으로 알려진 도시.</li>
+        <li>One of the cleanest cities in Africa! / 아프리카에서 가장 깨끗한 도시 중 하나!</li>
+    </ul>
+
+    <h3>🌡️ Weather | 날씨</h3>
+    <p>Average temperature: <strong>24°C</strong> year-round. / 연중 평균 기온 24°C.</p>
+
+</body>
 </html>
